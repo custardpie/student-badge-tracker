@@ -8,5 +8,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '18'
-      - run: cd api && npm ci && npm run lint && npm test
-      - run: cd app && npm ci && npm run lint && npm test
+      - run: cd api && npm ci && npm run lint && npm run test
+      - run: cd app && npm ci && npm run lint && npm run test
