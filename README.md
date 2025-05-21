@@ -12,7 +12,9 @@ A simple app to track digital badges students can earn (e.g., "JavaScript Beginn
 
 ## Tasks
 * Install software on your laptop
-    - Git source control https://gitforwindows.org/
+    - Git source control
+        + Windows https://gitforwindows.org/
+        + Mac Install homebrew and then brew install git
     - VS Code (Code editor) https://code.visualstudio.com/
     - Node.js v22 https://nodejs.org/en/download
 * Get your code from https://github.com/custardpie/student-badge-tracker
