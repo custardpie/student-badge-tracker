@@ -31,12 +31,15 @@ pull request
 ## How to run
 Open the code in VS Code. Open a terminal and then run the following commands
 ### Backend
+```
 cd api
 npm install
 npm run dev
+```
 
 ### Frontend
+```
 cd app
 npm install
 npm run dev
-
+```
