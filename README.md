@@ -47,13 +47,8 @@ cd api
 npm install
 npm run dev
 
-npm i --save-dev @types/cors
-npm install --save-dev supertest @types/supertest
-
 # Frontend
 cd app
 npm install
 npm run dev
 
-
-npm install --save-dev vitest jsdom @testing-library/react @testing-library/jest-dom
