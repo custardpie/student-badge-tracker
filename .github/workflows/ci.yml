@@ -9,4 +9,4 @@ jobs:
         with:
           node-version: '18'
       - run: cd api && npm ci && npm run lint && npm test
-      - run: cd ../app && npm ci && npm run lint && npm test
+      - run: cd app && npm ci && npm run lint && npm test
