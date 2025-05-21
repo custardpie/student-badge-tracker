@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import badgeRoutes from './badges.js';
+import badgeRoutes from './badges';
 
 const app = express();
 const PORT = 3000;

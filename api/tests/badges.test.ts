@@ -1,6 +1,6 @@
 import request from 'supertest';
 import express from 'express';
-import badgeRoutes from '../badges.js';
+import badgeRoutes from '../badges';
 
 const app = express();
 app.use(express.json());
