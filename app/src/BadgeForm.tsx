@@ -9,14 +9,11 @@ function BadgeForm({ onAdd }: Props) {
 
   const[error, setError] = useState('');
 
-
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const allFilled = Object.values(form).every((val) => val.trim() !== '');
-
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,9 +40,6 @@ function BadgeForm({ onAdd }: Props) {
     </form>
   );
 }
-
-
-
 
 export default BadgeForm;
 
