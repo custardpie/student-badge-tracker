@@ -26,7 +26,7 @@ A simple app to track digital badges students can earn (e.g., "JavaScript Beginn
     - Create a feature branch for your work
     - Have a look at the code
     - Ask ChatGPT
-* When you are ready, push your work up to the repos and create a
+* After lunch, push your work up to the repos and create a
 pull request
 * Review each others work
 
