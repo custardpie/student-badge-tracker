@@ -12,9 +12,11 @@ interface Badge {
 
 let badges: Badge[] = [];
 
+
 router.get('/', (req, res) => {
   res.json(badges);
 });
+
 
 router.post('/', (req, res) => {
   const { title, description, awardedTo } = req.body;
@@ -34,9 +36,16 @@ router.get('/:id', (req, res) => {
   res.json(badge);
 });
 
+router.delete('/', (req, res) => {
+  badges = []
+  res.status(204).end()
+});
+
 router.delete('/:id', (req, res) => {
   badges = badges.filter(b => b.id !== req.params.id);
   res.status(204).end();
 });
+
+
 
 export default router;
