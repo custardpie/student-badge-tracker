@@ -34,7 +34,7 @@ function BadgeForm({ onAdd }: Props) {
       <input name="title" value={form.title} onChange={handleChange} placeholder="Title" required />
       <input name="description" value={form.description} onChange={handleChange} placeholder="Description" required />
       <input name="awardedTo" value={form.awardedTo} onChange={handleChange} placeholder="Awarded To" required />
-      <input name="dateAwarded" value={form.dateAwarded} onChange={handleChange} placeholder="Date" required />
+      <input name="dateAwarded" value={form.dateAwarded} onChange={handleChange} placeholder="DD/MM/YYYY" required />
 
       {error && <p style={{color:'red'}}>{error}</p>}
       <button type="submit" disabled={!allFilled}>Add Badge</button>
