@@ -12,6 +12,7 @@ describe('Badge API', () => {
       title: 'First Commit',
       description: 'Made your first commit',
       awardedTo: 'Alice'
+      dateAwarded: '20/04/2025'
     });
     expect(response.statusCode).toBe(201);
     expect(response.body.title).toBe('First Commit');

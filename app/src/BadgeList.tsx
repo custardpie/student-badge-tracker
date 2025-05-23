@@ -25,7 +25,7 @@ function BadgeList({ badges }: Props) {
       <ul>
         {filteredBadges.map(badge => (
           <li key={badge.id}>
-            <strong>{badge.title}</strong> - {badge.description} (Awarded to: {badge.awardedTo})
+            <strong>{badge.title}</strong> - {badge.description} (Awarded to: {badge.awardedTo}) (Date Awarded: {badge.dateAwarded})
           </li>
         ))}
       </ul>

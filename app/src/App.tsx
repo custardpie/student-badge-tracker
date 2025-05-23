@@ -7,6 +7,7 @@ export interface Badge {
   title: string;
   description: string;
   awardedTo: string;
+  dateAwarded: string;
 }
 
 function App() {

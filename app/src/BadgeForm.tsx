@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 interface Props {
-  onAdd: (badge: { title: string; description: string; awardedTo: string }) => void;
+  onAdd: (badge: { title: string; description: string; awardedTo: string; dateAwarded: string}) => void;
 }
 
 function BadgeForm({ onAdd }: Props) {
-  const [form, setForm] = useState({ title: '', description: '', awardedTo: '' });
+  const [form, setForm] = useState({ title: '', description: '', awardedTo: '' , dateAwarded: ''});
 
   const[error, setError] = useState('');
 
@@ -26,7 +26,7 @@ function BadgeForm({ onAdd }: Props) {
         }
 
     onAdd(form)
-    setForm({ title: '', description: '', awardedTo: '' });
+    setForm({ title: '', description: '', awardedTo: '', dateAwarded: ''});
   };
 
   return (
@@ -34,6 +34,7 @@ function BadgeForm({ onAdd }: Props) {
       <input name="title" value={form.title} onChange={handleChange} placeholder="Title" required />
       <input name="description" value={form.description} onChange={handleChange} placeholder="Description" required />
       <input name="awardedTo" value={form.awardedTo} onChange={handleChange} placeholder="Awarded To" required />
+      <input name="dateAwarded" value={form.dateAwarded} onChange={handleChange} placeholder="Date" required />
 
       {error && <p style={{color:'red'}}>{error}</p>}
       <button type="submit" disabled={!allFilled}>Add Badge</button>
