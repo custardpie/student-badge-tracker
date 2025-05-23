@@ -8,6 +8,7 @@ interface Badge {
   title: string;
   description: string;
   awardedTo: string;
+  dateAwarded: string;
 }
 
 let badges: Badge[] = [];
@@ -19,12 +20,13 @@ router.get('/', (req, res) => {
 
 
 router.post('/', (req, res) => {
-  const { title, description, awardedTo } = req.body;
+  const { title, description, awardedTo, dateAwarded} = req.body;
   const newBadge: Badge = {
     id: uuidv4(),
     title,
     description,
-    awardedTo
+    awardedTo,
+    dateAwarded
   };
   badges.push(newBadge);
   res.status(201).json(newBadge);
